@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+        <title>Minton - Responsive Admin Dashboard Template</title>
+
+        <link href="plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+
+        <!-- RangeSlider -->
+        <link href="plugins/ion-rangeslider/ion.rangeSlider.css" rel="stylesheet" type="text/css">
+        <link href="plugins/ion-rangeslider/ion.rangeSlider.skinFlat.css" rel="stylesheet" type="text/css">
+
+        <!-- DataTables -->
+        <link href="plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+        <link href="plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Switches -->
+        <link href="plugins/switchery/switchery.min.css" rel="stylesheet" />
+
+        <!-- Icons - Fontawesome -->
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css">
+
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <style>
+            #one {font-size: 16px;}
+        </style>
+
+    </head>
+
+
+    <body>
+
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main bg-inverse">
+                <div class="container">
+
+                    <!-- Logo container-->
+                    <div class="logo" style="margin-bottom: 2%">
+                        <a href="index.html" class="logo"><i class="md md-equalizer"></i> <span>Finanzpilot - Investmentverzeichnis</span> </a>
+                    </div>
+                    <!-- End Logo container-->
+
+                    <div class="menu-extras">
+
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <!-- <form class="navbar-left app-search pull-left hidden-xs">
+                                    <input type="text" placeholder="Investitionsmöglichkeit hinzufügen" class="form-control">
+                                    <a href=""><i class="fa fa-search"></i></a>
+                               </form> -->
+
+                               <!-- Button trigger modal -->
+                                <!-- <button type="button" class="btn" style="background-color: #fb6d9d; color: white;" data-toggle="modal" data-target="#exampleModal">
+                                    Finanzpilot verbessern
+                                </button> -->
+
+                            </li>
+
+                            <!--<li class="dropdown">
+                                <a href="" class="dropdown-toggle waves-effect waves-light profile" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle"> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)"><i class="ti-user m-r-5"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-settings m-r-5"></i> Settings</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-lock m-r-5"></i> Lock screen</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul> -->
+
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End topbar -->
+
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <!-- =======================
+             ===== START PAGE ======
+             ======================= -->
+
+
+            <div class="container">
+
+                <!-- Page-Title -->
+                <!--<div class="row">
+                    <div class="col-sm-12">
+                         <h4 class="page-title">Finanzpilot - Mehr Ideen, mehr Möglichkeiten, mehr Geld</h4>
+                    </div>
+                </div> -->
+                <!-- Page-Title -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-box">
+
+                        </div>
+                    </div>
+                </div>
+                    <!-- end col -8 -->
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card-box table-responsive">
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+
+                                  <div class="list-group-item text-center mark"></i>
+                                      <strong>Investitionssumme </strong> </div>
+                                  <a class="list-group-item">
+                                      <div class="form-group">
+                                          <label for="range_03" class="col-sm-0 control-label"></label>
+                                          <div class="col-sm-12">
+                                              <input id="range_03">
+                                          </div>
+                                          <div class="col-md-12">
+                                               <h1 class="page-title"></h1>
+                                          </div>
+                                      </div>
+                                    </a>
+                                  <!-- <a class="list-group-item text-center">&nbsp;
+                                      <strong> Risiko </strong> </a>
+                                  <a align="center" class="list-group-item col-md-4"><i class="fa fa-shield fa-lg"></i>&nbsp;
+                                      <input type="checkbox" checked data-plugin="switchery" data-color="#00b19d">
+                                  </a>
+                                  <a align="center" class="list-group-item col-md-4">
+                                      <i class="fa fa-balance-scale fa-lg"></i>&nbsp;
+                                          <input type="checkbox" checked data-plugin="switchery" data-color="#00b19d"/>
+                                  </a>
+                                  <a align="center" class="list-group-item col-md-4">
+                                      <i class="fa fa-fire fa-lg"></i>&nbsp;
+                                          <input type="checkbox" checked data-plugin="switchery" data-color="#00b19d"/>
+                                  </a> -->
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+
+
+                               </div>
+                            </div><!-- Row -->
+
+                            <table id="datatable-buttons" class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Beschreibung</th>
+                                        <th>mögliche Rendite</th>
+                                        <th>Risiko</th>
+                                        <th>Mindesteinsatz</th>
+                                        <th>Für Einsteiger</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center card-box">
+                          <h4> Bankdienstleistungen </h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                      <a data-toggle="collapse" href="#collapse_1" aria-expanded="false" aria-controls="#collapse_1">
+                        <div class="text-center card-box" id="bonds">
+                            <h4>Bonds</h4>
+                            <p class="text-muted text-nowrap">Festverzinsliche Wertpapiere</p>
+                        </div>
+                      </a>
+                   </div>
+
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                      <a data-toggle="collapse" href="#collapse_2" aria-expanded="false" aria-controls="#collapse_2">
+                        <div class="text-center card-box">
+                            <h4>Offene Investmentfonds</h4>  <!-- farbiger Text: class="text-primary" -->
+                            <p class="text-muted text-nowrap">Miteigentum am Fondsvermögen</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_3" aria-expanded="false" aria-controls="#collapse_3">
+                            <div class="text-center card-box" id="versicherungen">
+                                <h4>Versicherungen mit Anlagecharackter</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <!-- <p class="text-muted text-nowrap">Miteigentum am Fondsvermögen</p> -->
+                            </div>
+                        </a>
+                     </div>
+
+                     <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_4" aria-expanded="false" aria-controls="#collapse_4">
+                            <div class="text-center card-box">
+                                <h4>Spareinlagen</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Unbefristete Geldanlage</p>
+                            </div>
+                        </a>
+                     </div>
+
+                    </div>
+                    <!-- ROW END -->
+
+                <!-- BEGIN OF BOX-CARDS -->
+                <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_1">
+                    <div class="card-box">
+                            Bonds Text
+                    </div>
+                </div>
+                <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_2">
+                    <div class="card-box">
+                        Offene Investmentfonds Text
+                    </div>
+                </div>
+                    <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_3">
+                    <div class="card-box">
+                        Versicherungen mit Anlagecharackter Text
+                    </div>
+                </div>
+                    <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_4">
+                    <div class="card-box">
+                        Spareinlagen Text
+                    </div>
+                </div>
+                <!-- END OF BOX-CARDS -->
+
+                <div class="row">
+
+                     <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_5" aria-expanded="false" aria-controls="#collapse_5">
+                            <div class="text-center card-box">
+                                <h4>Whatever</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Festverzinsliche Wertpapiere</p>
+                            </div>
+                        </a>
+                     </div>
+
+                     <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_6" aria-expanded="false" aria-controls="#collapse_6">
+                            <div class="text-center card-box">
+                                <h4>ETF's und ETC's</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Börsengehandelte Fonds</p>
+                            </div>
+                        </a>
+                     </div>
+
+                     <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_7" aria-expanded="false" aria-controls="#collapse_7">
+                            <div class="text-center card-box">
+                                <h4>Aktien</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Unternehmensanteile</p>
+                            </div>
+                        </a>
+                     </div>
+
+                     <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_8" aria-expanded="false" aria-controls="#collapse_8">
+                            <div class="text-center card-box">
+                                <h4>Optionsanleihen</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Börsengehandelte Optionen</p>
+                            </div>
+                        </a>
+                     </div>
+
+                </div>
+                <!-- end row -->
+
+                <!-- BEGIN OF BOX-CARDS -->
+                <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_5">
+                    <div class="card-box">
+                        Whatever Text
+                    </div>
+                </div>
+                <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_6">
+                    <div class="card-box">
+                        ETF's und ETC's Text
+                    </div>
+                </div>
+                    <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_7">
+                    <div class="card-box">
+                        Aktien
+                    </div>
+                </div>
+                    <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_8">
+                    <div class="card-box">
+                        Optionsanleihen Text
+                    </div>
+                </div>
+                <!-- END OF BOX-CARDS -->
+
+                <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center card-box">
+                          <h4> Neue Möglichkeiten </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_9" aria-expanded="false" aria-controls="#collapse_9">
+                            <div class="text-center card-box">
+                                <h4>Geld verleihen mit Rendite</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">P2P Lending</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_10" aria-expanded="false" aria-controls="#collapse_10">
+                            <div class="text-center card-box">
+                                <h4>Bitcoin</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Dezentralisierte Internetwährung</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_11" aria-expanded="false" aria-controls="#collapse_11">
+                            <div class="text-center card-box">
+                                <h4>Bäume pflanzen</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Börsengehandelte Optionen</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_12" aria-expanded="false" aria-controls="#collapse_12">
+                            <div class="text-center card-box" id="crowdfunding">
+                                <h4>Crowdfunding</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted ">Mit wenig Geld in junge Start-ups investieren</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- end row -->
+
+                <!-- BEGIN OF BOX-CARDS -->
+                <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_9">
+                    <div class="card-box">
+                        P2P Lending Text
+                    </div>
+                </div>
+                <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_10">
+                    <div class="card-box">
+                        ETF's Text
+                    </div>
+                </div>
+                    <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_11">
+                    <div class="card-box">
+                        Optionsanleihen
+                    </div>
+                </div>
+                    <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_12">
+                    <div class="card-box">
+                        Spareinlagen
+                    </div>
+                </div>
+                <!-- END OF BOX-CARDS -->
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_13" aria-expanded="false" aria-controls="#collapse_13">
+                            <div class="text-center card-box">
+                                <h4>Kaffee</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Dezentralisierte Internetwährung</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_14" aria-expanded="false" aria-controls="#collapse_14">
+                            <div class="text-center card-box">
+                                <h4>Lithium</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">Börsengehandelte Fonds</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_15" aria-expanded="false" aria-controls="#collapse_15">
+                            <div class="text-center card-box">
+                                <h4>Exportkraft Deutschland</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted text-nowrap">S-Dax</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 card-shadow">
+                        <a data-toggle="collapse" href="#collapse_16" aria-expanded="false" aria-controls="#collapse_16">
+                            <div class="text-center card-box" id="spareinlagen">
+                                <h4>Spareinlagen</h4>  <!-- farbiger Text: class="text-primary" -->
+                                <p class="text-muted">Unbefristete Geldanlage bei Banken und Kreditinstituten</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- end row -->
+
+                <!-- BEGIN OF BOX-CARDS -->
+                <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_13">
+                    <div class="card-box">
+                       Spareinlagen Text
+                    </div>
+                </div>
+                <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_14">
+                    <div class="card-box">
+                       ETF's Text
+                    </div>
+                </div>
+                    <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_15">
+                    <div class="card-box">
+                        Aktien
+                    </div>
+                </div>
+                    <!-- Collapse Element zum Anzeigen des Textes für alle Investmentmöglichkeiten -->
+                <div class="collapse" id="collapse_16">
+                    <div class="card-box">
+                        Spareinlagen Text
+                    </div>
+                </div>
+                <!-- END OF BOX-CARDS -->
+
+
+                <div class="row">
+
+                  <div class="col-lg-4">
+                          <div class="portlet" id="doughnut1_portlet"><!-- /primary heading -->
+                              <div class="portlet-heading">
+                                  <h5 class="portlet-title text-dark">
+                                     1. Was ist ihnen bei einer Geldanlage am wichtigsten?
+                                  </h5>
+
+                                  <div class="clearfix"></div>
+                              </div>
+
+                                  <div class="portlet-body">
+                                      <canvas id="doughnut" height="300"></canvas>
+                                  </div>
+
+                          </div>
+                      </div>
+
+                    <div class="col-lg-4">
+		                        <div class="portlet" id="bar2_portlet"><!-- /primary heading -->
+		                            <div class="portlet-heading">
+		                                <h5 class="portlet-title text-dark">
+		                                   2. Was sehen Deutsche als renditestarke Alternativen an?
+		                                </h5>
+
+		                                <div class="clearfix"></div>
+		                            </div>
+
+		                                <div class="portlet-body">
+		                                    <canvas id="bar2" height="300"></canvas>
+		                                </div>
+
+		                        </div>
+		                </div>
+
+                    <div class="col-lg-4">
+		                        <div class="portlet" id="bar3_portlet">
+		                            <div class="portlet-heading">
+		                                <h5 class="portlet-title text-dark">
+		                                   3. Wenn Sie an nachhaltigen Geldanlagen interessiert sind, welche Produkte kämen für Sie infrage?
+		                                </h5>
+
+		                                <div class="clearfix"></div>
+		                            </div>
+
+		                                <div class="portlet-body">
+		                                    <canvas id="bar3" height="300"></canvas>
+		                                </div>
+
+		                        </div>
+		                </div>
+
+                </div>
+
+                <div class="card-box">
+                      <ol>
+                        <li> <div class="col-lg-8">Aus dem Jahr 2017 | 1.010 Bundesbürger wurden befragt  </div> <div class="col-lg-4"> <span>Quelle: <a style="color: #3bafda" target="_blank" href="https://www.gothaer.de/ueber-uns/presse/publikationen/studien/anlegerstudie-2017.htm" > Gothaer Anlegerstudie 2017 </a></span> </div></li>
+                        <li> <div class="col-lg-8">Aus dem Jahr 2017 | 1.010 Bundesbürger wurden befragt | Die Grafik zeigt nur einen Ausschnitt  </div> <div class="col-lg-4"> <span>Quelle: <a style="color: #3bafda" target="_blank" href="https://www.gothaer.de/ueber-uns/presse/publikationen/studien/anlegerstudie-2017.htm" > Gothaer Anlegerstudie 2017 </a></span> </div></li>
+                        <li> <div class="col-lg-8">Aus dem Jahr 2016 | Die Grafik zeigt nur einen Auschnitt  </div> <div class="col-lg-4"> <span>Quelle: <a style="color: #3bafda" target="_blank" href="https://de.statista.com/statistik/daten/studie/203315/umfrage/umfrage-zu-den-moeglichkeiten-nachhaltiger-geldanlagen/" > Statista </a></span> </div></li>
+                      </ol>
+                 </div>
+                <!-- end row -->
+
+                <!-- <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="card-box widget-user">
+                            <div>
+                                <img src="assets/images/users/avatar-1.jpg" class="img-responsive img-circle" alt="user">
+                                <div class="wid-u-info">
+                                    <h4 class="m-t-0 m-b-5">Förderer</h4>
+                                    <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="card-box widget-user">
+                            <div>
+                                <img src="assets/images/users/avatar-2.jpg" class="img-responsive img-circle" alt="user">
+                                <div class="wid-u-info">
+                                    <h4 class="m-t-0 m-b-5">Sonstiges</h4>
+                                    <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
+
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="card-box widget-user">
+                            <div>
+                                <img src="assets/images/users/avatar-7.jpg" class="img-responsive img-circle" alt="user">
+                                <div class="wid-u-info">
+                                    <h4 class="m-t-0 m-b-5">Sonstiges</h4>
+                                    <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
+
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- end row -->
+
+                <!-- MODEL FÜR NEUE INVESTITIONSMÖGLICHKEITEN -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Schreibe Finanzpilot eine Email!</h5>
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                <label for="recipient-name" class="form-control-label">Betreff: Neue Investitionsmöglichkeit</label>
+                                <!-- <input type="text" class="form-control" id="recipient-name"> -->
+                                </div>
+                                <div class="form-group">
+                                <label for="message-text" class="form-control-label">Nachricht:</label>
+                                <textarea style="resize: none;" class="form-control" id="message-text" name="textmessage"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Senden</button> -->
+                        <form action="sendEmail.php">
+                                <input type="submit" class="btn btn-primary" value="Senden">
+                        </form>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Footer -->
+                <footer class="footer text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                2017 © Finanzpilot.
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Footer -->
+
+            </div> <!-- end container -->
+        </div>
+        <!-- End wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- Chart JS -->
+        <script src="plugins/chart.js/chart.min.js"></script>
+        <script src="assets/pages/jquery.chartjs.init.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <!-- Datatables-->
+        <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="plugins/datatables/jszip.min.js"></script>
+        <script src="plugins/datatables/pdfmake.min.js"></script>
+        <script src="plugins/datatables/vfs_fonts.js"></script>
+        <script src="plugins/datatables/buttons.html5.min.js"></script>
+        <script src="plugins/datatables/buttons.print.min.js"></script>
+        <script src="plugins/datatables/dataTables.fixedHeader.min.js"></script>
+        <script src="plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="plugins/datatables/dataTables.scroller.min.js"></script>
+
+        <!-- Ion slider -->
+        <script src="plugins/ion-rangeslider/ion.rangeSlider.min.js"></script>
+        <script src="assets/pages/jquery.ui-sliders.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="assets/pages/datatables.init.js"></script>
+
+        <!-- Firebase-->
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-messaging.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBlgbopkTUAiaFzuyNYhfrNLIoBJODoziQ",
+                authDomain: "finanzpilot-ec0a8.firebaseapp.com",
+                databaseURL: "https://finanzpilot-ec0a8.firebaseio.com",
+                projectId: "finanzpilot-ec0a8",
+                storageBucket: "finanzpilot-ec0a8.appspot.com",
+                messagingSenderId: "604194675318"
+            };
+            firebase.initializeApp(config);
+
+        </script>
+
+        <!-- Chart JS -->
+        <script src="plugins/chart.js/chart.min.js"></script>
+        <script src="assets/pages/jquery.chartjs.init.js"></script>
+
+        <!-- eigene JS Files -->
+        <script src="assets/js/secondmain.js"></script>
+
+        <!-- Switches -->
+        <script src="plugins/switchery/switchery.min.js"></script>
+
+        <!-- Counter Up  -->
+        <script src="plugins/waypoints/lib/jquery.waypoints.js"></script>
+        <script src="plugins/counterup/jquery.counterup.min.js"></script>
+
+        <!-- circliful Chart -->
+        <script src="plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+        <script src="plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- skycons -->
+        <script src="plugins/skyicons/skycons.min.js" type="text/javascript"></script>
+
+        <!-- Page js  -->
+        <script src="assets/pages/jquery.dashboard.js"></script>
+
+        <!-- Custom main Js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#datatable').dataTable();
+                $('#datatable-keytable').DataTable( { keys: true } );
+                $('#datatable-responsive').DataTable();
+                $('#datatable-scroller').DataTable( { ajax: "plugins/datatables/json/scroller-demo.json", deferRender: true, scrollY: 380, scrollCollapse: true, scroller: true } );
+                var table = $('#datatable-fixed-header').DataTable( { fixedHeader: true } );
+            } );
+            // TableManageButtons.init();
+
+        </script>
+
+
+        <!-- <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                    delay: 100,
+                    time: 1200
+                });
+                $('.circliful-chart').circliful();
+            });
+
+            /* BEGIN SVG WEATHER ICON */
+            if (typeof Skycons !== 'undefined'){
+            var icons = new Skycons(
+                {"color": "#3bafda"},
+                {"resizeClear": true}
+                ),
+                    list  = [
+                        "clear-day", "clear-night", "partly-cloudy-day",
+                        "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+                        "fog"
+                    ],
+                    i;
+
+                for(i = list.length; i--; )
+                icons.set(list[i], list[i]);
+                icons.play();
+            };
+
+        </script> -->
+
+    </body>
+</html>
